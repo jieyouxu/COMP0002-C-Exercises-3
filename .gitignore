@@ -1,0 +1,11 @@
+.vscode/
+.pytest_cache/
+.node_modules/
+__pycache__
+.idea/
+bin/
+develop-eggs/
+eggs/
+parts/
+**/*.o
+**/*.out
