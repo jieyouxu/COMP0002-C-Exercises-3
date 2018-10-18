@@ -126,7 +126,13 @@ int32_t askForTargetNumber(void) {
     printf("Please enter the number to convert to string [0-999]:\n");
     scanf("%i", &_targetNumber);
     assert(_targetNumber >= LOWER_BOUND && _targetNumber <= UPPER_BOUND);
+    clearInputBuffer();
     return _targetNumber;
+}
+
+void clearInputBuffer(void) {
+    char ch;
+    while ((ch = getchar()) != '\n' && ch != EOF);
 }
 
 /**
