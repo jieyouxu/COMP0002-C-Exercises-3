@@ -9,5 +9,3 @@ eggs/
 parts/
 **/*.o
 **/*.out
-**/*.spec.c
-**/bdd-for-c.h
