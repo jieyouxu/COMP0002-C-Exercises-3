@@ -9,3 +9,5 @@ eggs/
 parts/
 **/*.o
 **/*.out
+**/bin/
+**/build/
