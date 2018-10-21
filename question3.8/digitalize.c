@@ -23,14 +23,15 @@ int32_t compute_num_of_digits(int32_t n) {
 }
 
 void digitalize(int32_t n, int32_t* out_digits, size_t size) {
+    if (!out_digits) {
+        return;
+    }
+    
     if (n < 0) {
         *(out_digits+0) = -1;
         return;
     }
 
-    if (!out_digits) {
-        return;
-    }
 
     if (size <= 0) {
         *(out_digits+0) = -1;
